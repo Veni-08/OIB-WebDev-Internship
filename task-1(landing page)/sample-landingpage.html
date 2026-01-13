@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudyBuddy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 0, 98);
+}
+
+.center-links {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right-buttons {
+    display: flex;
+    gap: 15px;
+    margin-right: 40px;
+}
+
+.login-btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+.signin-btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 0, 98);
+    color: black;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 98);
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 80px;
+}
+
+.hero {
+    height: 100vh;
+    background: url("study.avif") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 53px;
+}
+
+.hero p {
+    font-size: 30px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: blue;
+    border: none;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+   <div class="logo">StudyBuddy</div>
+
+   <nav class="center-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Contact Us</a>
+   </nav>
+
+   <div class="right-buttons">
+      <button class="login-btn">Log In</button>
+      <button class="signin-btn">Sign In</button>
+   </div>
+</header>
+
+<div class="separator"></div>
+
+<div class="hero">
+    <h1>Welcome to StudyBuddy 📝</h1>
+    <p>Plan your study schedule and stay organized every day</p>
+    <button>Download</button>
+</div>
+
+</body>
+</html>
